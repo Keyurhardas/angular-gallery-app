@@ -1,0 +1,17 @@
+<mat-grid-list cols="4" rowHeight="1:1">
+  <div>
+    <div *ngFor="let picture of pictures; trackBy: identify">
+      <mat-grid-tile>
+        <div
+          id="imgDiv"
+          matRipple
+          [matRippleColor]="color"
+          class="image-wrapper"
+          (click)="addPicture(picture)"
+        >
+          <img id="picture" class="image-container" src="{{ picture.download_url }}" />
+        </div>
+      </mat-grid-tile>
+    </div>
+  </div>
+</mat-grid-list>

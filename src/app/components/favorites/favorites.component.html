@@ -1,0 +1,10 @@
+<div class="content-wrapper">
+<div class="pictures-wrapper">
+  <app-photos-grid-view
+    *ngIf="!isEmpty"
+    (pictureEvent)="viewFullPicture($event)"
+    [pictures]="FavoritePictures"
+  ></app-photos-grid-view>
+  <h2 class="emptyLabel" color="dark" *ngIf="isEmpty">No Favorites :(</h2>
+</div>
+</div>

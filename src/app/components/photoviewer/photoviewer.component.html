@@ -1,0 +1,20 @@
+<div class="view-wrapper">
+  <button class="transparent-button" mat-icon-button (click)="goBack()">
+    <mat-icon class="icon-class">arrow_back_ios</mat-icon>
+    Back
+  </button>
+
+  <div class="img-wrapper">
+    <img class="img-class" [src]="picture" (load)="imgLoaded()" />
+
+    <button
+      class="transparent-button"
+      mat-icon-button
+      (click)="removeFavorite()"
+      [disabled]="Buttondisabled"
+    >
+      <mat-icon class="icon-class" color="warn">{{ iconName }}</mat-icon>
+      Remove from favorites
+    </button>
+  </div>
+</div>

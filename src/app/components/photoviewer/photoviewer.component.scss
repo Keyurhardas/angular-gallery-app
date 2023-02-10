@@ -1,0 +1,31 @@
+.view-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  overflow-y: hidden;
+  
+}
+
+.img-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-class{
+    height: 70%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.transparent-button{
+    margin-top: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.icon-class{
+  vertical-align: middle;
+}
